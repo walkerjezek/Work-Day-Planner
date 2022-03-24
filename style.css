@@ -42,6 +42,8 @@ textarea {
   margin-right: 3px;
   display: flex;
   justify-content: flex-end;
+  padding-top: 10px;
+  padding-right: 5px;
 }
 
 .hour {

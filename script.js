@@ -15,11 +15,15 @@ var pm5 = 17;
 var today = moment();
 $("#currentDay").text(today.format("LL"));
 
+var today = moment();
+$("#currentTime").text(today.format("hh:mm a"));
+
 
 //-----------------------------------------------------------------
 // Function to add background based on time of day
 var currentTime = moment();
+console.log(currentTime);
 
-function {
-    if (currentTime == 
-}
+// function {
+//     if (currentTime == 
+// }
