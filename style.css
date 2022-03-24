@@ -22,7 +22,12 @@ textarea {
 }
 
 .description {
+  display: flex;
   white-space: pre-wrap;
+  border-top: 1px dashed #000000;
+  border-left: 1px solid black;
+  align-items: center;
+  justify-content: center;
 }
 
 .time-block {
@@ -33,13 +38,17 @@ textarea {
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
+  border-top: 1px dashed #000000;
+  margin-right: 3px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  list-style-type: none;
 }
 
 .past {
@@ -68,4 +77,9 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: .5fr 4fr .5fr;
 }
