@@ -9,6 +9,7 @@ var pm2 = 14;
 var pm3 = 15;
 var pm4 = 16;
 var pm5 = 17;
+var hourBlock = $('.description');
 
 //-----------------------------------------------------------------
 //Todays date
@@ -21,9 +22,17 @@ $("#currentTime").text(today.format("hh:mm a"));
 
 //-----------------------------------------------------------------
 // Function to add background based on time of day
-var currentTime = moment();
+var currentTime = moment().format("hh");
 console.log(currentTime);
 
-// function {
-//     if (currentTime == 
-// }
+function colorChange() {
+    if (currentTime < 18) {
+        hourBlock.setAttribute("class", "past");
+    }
+}
+
+
+
+
+//-----------------------------------------------------------------
+// Keep text in local storage
