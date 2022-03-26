@@ -86,6 +86,11 @@ textarea {
   background-color: #77dd77;
 }
 
+.saveBtn:hover {
+  opacity: 75%;
+  transition: all 0.3s ease-in-out;
+}
+
 .container {
   display: grid;
   grid-template-columns: .5fr 4fr .5fr;
