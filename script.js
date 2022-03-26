@@ -1,15 +1,15 @@
 // Global Variables
 // Times
-var am9 = 9;
-var am10 = 10;
-var am11 = 11;
-var pm12 = 12;
-var pm1 = 13;
-var pm2 = 14;
-var pm3 = 15;
-var pm4 = 16;
-var pm5 = 17;
-var hourBlock = $('.description');
+// var am9 = 9;
+// var am10 = 10;
+// var am11 = 11;
+// var pm12 = 12;
+// var pm1 = 13;
+// var pm2 = 14;
+// var pm3 = 15;
+// var pm4 = 16;
+// var pm5 = 17;
+// var hourBlock = $('.description');
 
 // Gather the elements
 var nine = document.getElementById('9am');
@@ -21,11 +21,7 @@ var two = document.getElementById('2pm');
 var three = document.getElementById('3pm');
 var four = document.getElementById('4pm');
 var five = document.getElementById('5pm');
-
 // Store these items in an array to iterate through in the for loop?
-
-
-
 
 //-----------------------------------------------------------------
 //Todays date and time
@@ -56,7 +52,8 @@ console.log(currentTime);
 
 
 //-----------------------------------------------------------------
-// Keep textarea text in local storage. Doing this in probably the most inefficient way ever
+// Keep textarea text in local storage
+// Doing this in probably the most inefficient way ever...
 $( function() {
     $("#btn1").on("click", function() {
         var nineAM = document.getElementById("9am").value;
@@ -66,7 +63,77 @@ $( function() {
 });
 $("#9am").val(localStorage.getItem("9am"));
 
+$( function() {
+    $("#btn2").on("click", function() {
+        var tenAM = document.getElementById("10am").value;
+        localStorage.setItem("10am", tenAM);
+        console.log(localStorage);
+    });
+});
+$("#10am").val(localStorage.getItem("10am"));
 
+$( function() {
+    $("#btn3").on("click", function() {
+        var elevenAM = document.getElementById("11am").value;
+        localStorage.setItem("11am", elevenAM);
+        console.log(localStorage);
+    });
+});
+$("#11am").val(localStorage.getItem("11am"));
+
+$( function() {
+    $("#btn4").on("click", function() {
+        var twelvePM = document.getElementById("12pm").value;
+        localStorage.setItem("12pm", twelvePM);
+        console.log(localStorage);
+    });
+});
+$("#12pm").val(localStorage.getItem("12pm"));
+
+$( function() {
+    $("#btn5").on("click", function() {
+        var onePM = document.getElementById("1pm").value;
+        localStorage.setItem("1pm", onePM);
+        console.log(localStorage);
+    });
+});
+$("#1pm").val(localStorage.getItem("1pm"));
+
+$( function() {
+    $("#btn6").on("click", function() {
+        var twoPM = document.getElementById("2pm").value;
+        localStorage.setItem("2pm", twoPM);
+        console.log(localStorage);
+    });
+});
+$("#2pm").val(localStorage.getItem("2pm"));
+
+$( function() {
+    $("#btn7").on("click", function() {
+        var threePM = document.getElementById("3pm").value;
+        localStorage.setItem("3pm", threePM);
+        console.log(localStorage);
+    });
+});
+$("#3pm").val(localStorage.getItem("3pm"));
+
+$( function() {
+    $("#btn8").on("click", function() {
+        var fourPM = document.getElementById("4pm").value;
+        localStorage.setItem("4pm", fourPM);
+        console.log(localStorage);
+    });
+});
+$("#4pm").val(localStorage.getItem("4pm"));
+
+$( function() {
+    $("#btn9").on("click", function() {
+        var fivePM = document.getElementById("5pm").value;
+        localStorage.setItem("5pm", fivePM);
+        console.log(localStorage);
+    });
+});
+$("#5pm").val(localStorage.getItem("5pm"));
 
 
 //-----------------------------------------------------------------
@@ -142,4 +209,3 @@ if (currentTime == 17) {
 } else {
     five.setAttribute("class", "future")
 }
-
