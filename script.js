@@ -1,6 +1,4 @@
 // Global Variables
-// var hourBlock = $('.description');
-
 // Gather the elements
 var nine = document.getElementById('9am');
 var ten = document.getElementById('10am');
@@ -26,19 +24,6 @@ $("#currentTime").text(today.format("hh:mm a"));
 // Using Moment to grab the current time
 var currentTime = moment().format("HH");
 console.log(currentTime);
-
-
-//-----------------------------------------------------------------
-// Loop for color coding time blocks
-// for (i = 9; i < 18; i++) {
-//     if (currentTime == i) {
-//         nine.setAttribute("class", "present");
-//     } else if (currentTime > i) {
-//         nine.setAttribute("class", "past");
-//     } else {
-//         nine.setAttribute("class", "future")
-//     }
-// };
 
 
 //-----------------------------------------------------------------
@@ -124,6 +109,28 @@ $( function() {
     });
 });
 $("#5pm").val(localStorage.getItem("5pm"));
+
+// Clear localStorage and refresh the page
+$( function() {
+    $("#btn10").on("click", function() {
+        localStorage.clear();
+        window.location.reload();
+        console.log(localStorage);
+    });
+});
+
+
+//-----------------------------------------------------------------
+// Loop for color coding time blocks
+// for (i = 9; i < 18; i++) {
+//     if (currentTime == i) {
+//         nine.setAttribute("class", "present");
+//     } else if (currentTime > i) {
+//         nine.setAttribute("class", "past");
+//     } else {
+//         nine.setAttribute("class", "future")
+//     }
+// };
 
 
 //-----------------------------------------------------------------
